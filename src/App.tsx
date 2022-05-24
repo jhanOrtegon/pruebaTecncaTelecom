@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useReducer } from "react";
+import AppRouter from "./Routers/App";
+import { loginContext } from './context/auth/loginContext';
+import { storeLogin } from "./store/auth";
+import { EAuth } from "./store/auth/enum";
 
 function App() {
+
+  const init = () => {
+    return JSON.parse(localStorage.getItem(EAuth.login) as string) || { logged: false }
+  }
+
+  const [stateAuth, dispatch] = useReducer(storeLogin, {}, init)
+  useEffect(() => {
+    localStorage.setItem(EAuth.login, JSON.stringify(stateAuth))
+  }, [stateAuth])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <loginContext.Provider value={{ stateAuth, dispatch }}>
+      <AppRouter />
+    </loginContext.Provider>
   );
 }
 
