@@ -1,7 +1,15 @@
 import React from 'react'
+import { enpoints } from '../../enpoints'
+import useFetch from '../../hooks/useFetch'
 import { TLoginC } from './types'
 
 const LoginC: React.FC<TLoginC> = ({ handleChange, handleSubmit }) => {
+
+    const url = enpoints.getCharacterById('1011334')
+
+    const { data } = useFetch(url)
+
+    console.log(data, 'xxxxxxx');
 
     return (
         <div className='container w-25 mt-5 h-100 animate__animated animate__fadeIn'>

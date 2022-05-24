@@ -6,8 +6,6 @@ import SpinnerV from './../Spinner/index';
 
 const ListHeroesC: React.FC<TListHeroesC> = ({ data, isLoading }): ReactElement => {
 
-
-
     return (
         <>
             {
