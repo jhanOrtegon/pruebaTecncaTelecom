@@ -5,15 +5,14 @@ import { enpoints } from '../../../enpoints/index';
 
 const ListHeroesV: React.FC = (): ReactElement => {
 
-    const { data }: any = useFetch(enpoints.ALLCHARACTERS)
+    const { data, loading }: any = useFetch(enpoints.ALLCHARACTERS)
 
     const { results } = data?.data || {}
 
     const resultado = results?.map((e: any) => ({ ...e.thumbnail, name: e.name, id: e.id }))
 
-    console.log(data);
     return (
-        <ListHeroesC data={resultado} />
+        <ListHeroesC data={resultado} isLoading={loading} />
     )
 }
 
