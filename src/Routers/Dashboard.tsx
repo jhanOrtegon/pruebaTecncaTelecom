@@ -5,10 +5,12 @@ import NavbarV from '../views/Ui/Navbar/index';
 import MarvelV from '../views/Marvel/index';
 import SearchV from '../views/Search/index';
 import HeroeV from '../common/components/Heroe/index';
+import { Fondo } from './styled';
 
 const Dashboard = () => {
+
     return (
-        <>
+        <Fondo>
             <NavbarV />
             <div className='container'>
                 <Routes>
@@ -19,7 +21,7 @@ const Dashboard = () => {
                     <Route path='/*' element={<LoginV />} />
                 </Routes>
             </div>
-        </>
+        </Fondo>
     )
 }
 

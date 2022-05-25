@@ -8,7 +8,12 @@ const ALLCHARACTERS = `${https}?ts=1&apikey=${apiKey}&hash=${md5}&limit=100`;
 
 export const enpoints = {
     ALLCHARACTERS,
+
     getCharacterById: (id: string) => {
         return `${https}/${id}?ts=1&apikey=${apiKey}&hash=${md5}`
+    },
+
+    getCharacterByName: (name: string) => {
+        return `${https}?ts=1&nameStartsWith=${name}&apikey=${apiKey}&hash=${md5}&limit=100`
     }
 }

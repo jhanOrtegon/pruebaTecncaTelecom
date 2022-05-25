@@ -1,12 +1,22 @@
+type TComic = {
+    available: number,
+    items: {
+        name: string
+        resourceURI: string
+    }[]
+}
+
 export type THeroeC = {
+    isLoading?: boolean
     data?:
     {
-        id: string,
-        superhero: string,
-        publisher: string,
-        alter_ego: string,
-        first_appearance: string,
-        characters: string
+        id: number,
+        extension: string
+        descripcion: string
+        name: string
+        path: string
+        comics: TComic
+        modified: string
     }[]
-
 }
+

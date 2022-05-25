@@ -5,4 +5,5 @@ export const BoxSearch = styled.div`
     grid-template-columns: 100%;
     gap: 2%;
     margin: 50px auto;
+    /* height: 100vh; */
 `

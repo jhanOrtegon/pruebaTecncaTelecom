@@ -18,7 +18,7 @@ const ListHeroesC: React.FC<TListHeroesC> = ({ data, isLoading }): ReactElement 
                                 data?.map(heroe => (
                                     <Heroe key={heroe.id} className='animate__animated animate__fadeIn' >
                                         <HeroeBody>
-                                            <img src={`${heroe.path}.${heroe.extension}`} alt={heroe.name} style={{ width: '100%', height: '300px' }} />
+                                            <img src={`${heroe.path}.${heroe.extension}`} alt={heroe.name} style={{ width: '100%', height: '250px' }} />
                                         </HeroeBody>
 
                                         <HeroeFooter className='p-0'>
