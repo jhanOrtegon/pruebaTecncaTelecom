@@ -6,5 +6,6 @@ export type TValidateForm = {
 export type TLoginC = {
     handleChange: (e: ChangeEventHandler<HTMLInputElement>) => void
     handleSubmit: (e: FormEventHandler<HTMLFormElement>) => void
+    stateLogin?: boolean | null
 }
 
