@@ -4,7 +4,7 @@ export const dataLogin = [
         password: '123456',
         state: true
     }, {
-        email: "develoment@hotmail.com",
+        email: "development@hotmail.com",
         password: '12345678',
         state: true
     }

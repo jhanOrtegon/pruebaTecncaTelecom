@@ -1,7 +1,7 @@
 const md5 = `8d787709da6d46aee8978e22bb6fb448`
 const apiKey = `0b043f0393bef05bcb96c2f66c1eddff`
-const https = `http://gateway.marvel.com:/v1/public/characters`
-const httpsr = `http://gateway.marvel.com:/v1/public/comics`
+const https = `https://gateway.marvel.com:/v1/public/characters`
+const httpsr = `https://gateway.marvel.com:/v1/public/comics`
 
 export const enpoints = {
 
