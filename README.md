@@ -2,6 +2,9 @@
 
 In the project directory, you can run:
 
+## install dependencies
+npm install
+
 ## start Server
 
 npm run start

@@ -45,7 +45,7 @@ export const Fondo = styled.div`
       background-image: url("/assets/rr.jpg");
       background-repeat:repeat;
       background-size: cover;
-      min-height: 100vh;
+      min-height: 80vh;
       display: flex;
 `
 
