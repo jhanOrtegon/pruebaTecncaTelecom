@@ -4,7 +4,7 @@ import { loginContext } from '../context/auth/loginContext';
 
 const PublicRouters = ({ children }: { children: any }) => {
     const auth = useContext(loginContext)
-
+    console.log(auth);
     return !auth.stateAuth?.logged
         ? children : <Navigate to={'/dashboard/dc'} />
 }

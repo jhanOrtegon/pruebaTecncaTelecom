@@ -18,7 +18,7 @@ const Dashboard = () => {
                     <Route path='dashboard/marvel' element={<MarvelV />} />
                     <Route path='dashboard/search' element={<SearchV />} />
                     <Route path='dashboard/heroe' element={<HeroeV />} />
-                    <Route path='/*' element={<LoginV />} />
+                    <Route path='/*' element={<MarvelV />} />
                 </Routes>
             </div>
         </Fondo>
