@@ -7,6 +7,7 @@ import SpinnerV from '../Spinner/index';
 const HeroeC: React.FC<THeroeC> = ({ data, isLoading }) => {
     const router = useNavigate()
     const heroe = data?.[0]
+
     return (
 
         <>
@@ -33,7 +34,7 @@ const HeroeC: React.FC<THeroeC> = ({ data, isLoading }) => {
                                                         <h1>{heroe.name.toUpperCase()}</h1>
                                                     </li>
                                                     <li className="list-group-item p-3">
-                                                        <span className='fw-bold'>{heroe?.descripcion?.length ? heroe.descripcion : 'Descripcion no Disponible'}</span>
+                                                        <span>{heroe?.description?.length ? heroe.description : 'Descripcion no Disponible'}</span>
                                                     </li>
                                                     <li className="list-group-item p-0">
 
@@ -56,6 +57,7 @@ const HeroeC: React.FC<THeroeC> = ({ data, isLoading }) => {
                                     </CardHeroe>
                                     : <div className='alert alert-danger'>No Hay Resultados</div>
                             }
+
                         </div>
                     )
             }

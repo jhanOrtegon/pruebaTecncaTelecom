@@ -5,7 +5,7 @@ import { TSearchC } from './types';
 
 const SearchC: React.FC<TSearchC> = ({ data: { handleChange, handleSubmit, stateForm: { inputHeroe }, dataHeroe: heroe, isLoading } }) => {
     return (
-        <BoxSearch className='animate__animated animate__fadeIn'>
+        <BoxSearch className='animate__animated animate__fadeIn text-white'>
             <div>
                 <h3>Busca a tu heroe Preferido</h3>
                 <form>
@@ -20,7 +20,7 @@ const SearchC: React.FC<TSearchC> = ({ data: { handleChange, handleSubmit, state
                         <div className='mt-4'>
                             <h3>Resultados</h3>
                             <hr />
-                            <div className='animate__animated animate__fadeIn  alert alert-info text-center'>No hay Resultados</div>
+                            <div className='animate__animated animate__fadeIn  alert bg-dark text-center'><h3>No hay Resultados</h3></div>
                         </div>
                 }
             </div>

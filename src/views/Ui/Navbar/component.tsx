@@ -10,12 +10,13 @@ const NavbarC: React.FC = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
             <div className="container">
+
                 <div style={{ width: '180px', display: 'flex', 'justifyContent': 'space-between', alignItems: 'center' }}>
                     <img src="/assets/logo/spiderman.png" alt="spiderman" height='50' />
                     <NavLink className="navbar-brand" to='/dashboard/marvel' >AppHeroes</NavLink>
                 </div>
 
-                <div>
+                <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <ul className="navbar-nav">
 
                         <li className="nav-item">
@@ -50,8 +51,13 @@ const NavbarC: React.FC = () => {
 
                         }}>Logout</button>
                 </div>
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
+
     )
 }
 

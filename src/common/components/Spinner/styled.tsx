@@ -21,9 +21,9 @@ export const Spinner = styled.div`
 `
 
 export const Hijo1 = styled.div`
-    width: 18px;
-    height: 18px;
-    background-color: #333;
+    width: 38px;
+    height: 38px;
+    background-color: white;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: ${skBouncedelay} 1.4s infinite ease-in-out both;
@@ -34,9 +34,9 @@ export const Hijo1 = styled.div`
 `
 
 export const Hijo2 = styled.div`
-    width: 18px;
-    height: 18px;
-    background-color: #333;
+    width: 38px;
+    height: 38px;
+    background-color: white;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: ${skBouncedelay} 1.4s infinite ease-in-out both;
@@ -49,9 +49,9 @@ export const Hijo2 = styled.div`
 
 
 export const Hijo3 = styled.div`
-    width: 18px;
-    height: 18px;
-    background-color: #333;
+    width: 38px;
+    height: 38px;
+    background-color: white;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: ${skBouncedelay} 1.4s infinite ease-in-out both;

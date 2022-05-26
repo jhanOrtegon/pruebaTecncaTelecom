@@ -9,5 +9,6 @@ type THeroes = {
 export type TListHeroesC = {
     data: THeroes[]
     isLoading?: boolean
+    setLimit?: any
 }
 

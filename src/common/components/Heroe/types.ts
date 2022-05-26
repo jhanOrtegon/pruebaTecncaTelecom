@@ -12,7 +12,7 @@ export type THeroeC = {
     {
         id: number,
         extension: string
-        descripcion: string
+        description: string
         name: string
         path: string
         comics: TComic

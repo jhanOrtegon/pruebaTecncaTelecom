@@ -3,9 +3,11 @@ import LoginV from '../views/Login';
 import Dashboard from './Dashboard';
 import PrivteRouters from './PrivteRouters';
 import PublicRouters from './PublicRouters';
+import { Fondo } from './styled';
 
 const AppRouter = () => {
     return (
+        // <Fondo>
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={
@@ -23,6 +25,7 @@ const AppRouter = () => {
                 />
             </Routes>
         </BrowserRouter>
+        // </Fondo>
     )
 }
 
