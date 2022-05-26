@@ -21,6 +21,6 @@ user: 'test@hotmail.com'
 pass: '123456'
 
 ## user two
-user: 'develoment@hotmail.com'
+user: 'development@hotmail.com'
 pass: '12345678'
 
